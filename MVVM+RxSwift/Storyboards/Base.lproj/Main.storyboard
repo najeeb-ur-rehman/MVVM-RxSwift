@@ -15,8 +15,49 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="SignUpView" customModule="MVVM_RxSwift" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="d9d-YK-0KQ">
+                                <rect key="frame" x="30" y="318" width="354" height="260"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J3z-71-la0">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qed-Yh-BAa">
+                                        <rect key="frame" x="0.0" y="70" width="354" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fl1-jm-FFf">
+                                        <rect key="frame" x="0.0" y="140" width="354" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyW-2g-jeZ">
+                                        <rect key="frame" x="0.0" y="210" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ovh-09-uvq"/>
+                                        </constraints>
+                                        <state key="normal" title="Sign Up"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d9d-YK-0KQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2Of-8t-7WH"/>
+                            <constraint firstItem="d9d-YK-0KQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rCb-bF-S0a"/>
+                            <constraint firstItem="d9d-YK-0KQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u2R-N0-or0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d9d-YK-0KQ" secondAttribute="trailing" constant="30" id="vFs-4R-ymw"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="emailTextField" destination="qed-Yh-BAa" id="CgG-io-hkS"/>
+                            <outlet property="fullNameTextField" destination="J3z-71-la0" id="Qwh-LI-BMV"/>
+                            <outlet property="phoneNumberTextField" destination="fl1-jm-FFf" id="u9C-Wk-o5K"/>
+                            <outlet property="signUpButton" destination="WyW-2g-jeZ" id="pQm-DK-BmK"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

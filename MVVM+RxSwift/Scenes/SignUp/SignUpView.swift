@@ -9,4 +9,17 @@ import UIKit
 
 class SignUpView: UIView {
 
+	// MARK: Outlets
+	
+	@IBOutlet weak var fullNameTextField: UITextField!
+	@IBOutlet weak var emailTextField: UITextField!
+	@IBOutlet weak var phoneNumberTextField: UITextField!
+	@IBOutlet weak var signUpButton: UIButton!
+	
+	override func awakeFromNib() {
+		super.awakeFromNib()
+		
+	}
+	
 }
+
