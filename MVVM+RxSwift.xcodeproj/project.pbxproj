@@ -56,15 +56,55 @@
 		E85CD5732711A15E009DB132 /* MVVM+RxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				E85CD5742711A15E009DB132 /* AppDelegate.swift */,
-				E85CD5762711A15E009DB132 /* SceneDelegate.swift */,
-				E85CD5782711A15E009DB132 /* ViewController.swift */,
-				E85CD57A2711A15E009DB132 /* Main.storyboard */,
-				E85CD57D2711A167009DB132 /* Assets.xcassets */,
-				E85CD57F2711A167009DB132 /* LaunchScreen.storyboard */,
-				E85CD5822711A167009DB132 /* Info.plist */,
+				E85CD58A2711A35A009DB132 /* ConfigurationFiles */,
+				E85CD5892711A32C009DB132 /* SupportingFiles */,
+				E85CD58D2711A39A009DB132 /* Scenes */,
+				E85CD58B2711A375009DB132 /* Storyboards */,
+				E85CD58C2711A384009DB132 /* Resources */,
 			);
 			path = "MVVM+RxSwift";
+			sourceTree = "<group>";
+		};
+		E85CD5892711A32C009DB132 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E85CD5742711A15E009DB132 /* AppDelegate.swift */,
+				E85CD5762711A15E009DB132 /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E85CD58A2711A35A009DB132 /* ConfigurationFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E85CD5822711A167009DB132 /* Info.plist */,
+			);
+			path = ConfigurationFiles;
+			sourceTree = "<group>";
+		};
+		E85CD58B2711A375009DB132 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E85CD57A2711A15E009DB132 /* Main.storyboard */,
+				E85CD57F2711A167009DB132 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E85CD58C2711A384009DB132 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E85CD57D2711A167009DB132 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E85CD58D2711A39A009DB132 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E85CD5782711A15E009DB132 /* ViewController.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6Y8L32XBX;
-				INFOPLIST_FILE = "MVVM+RxSwift/Info.plist";
+				INFOPLIST_FILE = "MVVM+RxSwift/ConfigurationFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6Y8L32XBX;
-				INFOPLIST_FILE = "MVVM+RxSwift/Info.plist";
+				INFOPLIST_FILE = "MVVM+RxSwift/ConfigurationFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
