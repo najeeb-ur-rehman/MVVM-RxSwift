@@ -15,6 +15,9 @@
 		E85CD5812711A167009DB132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85CD57F2711A167009DB132 /* LaunchScreen.storyboard */; };
 		E85CD59A2711A7E7009DB132 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CD5992711A7E7009DB132 /* SignUpViewModel.swift */; };
 		E85CD59D2711A80B009DB132 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CD59C2711A80B009DB132 /* SignUpView.swift */; };
+		E85CD5A12711AF24009DB132 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CD5A02711AF24009DB132 /* UIView.swift */; };
+		E85CD5A62711AF5E009DB132 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CD5A52711AF5E009DB132 /* Colors.swift */; };
+		E85CD5A92711B0AD009DB132 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CD5A82711B0AD009DB132 /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		E85CD5822711A167009DB132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E85CD5992711A7E7009DB132 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		E85CD59C2711A80B009DB132 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		E85CD5A02711AF24009DB132 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		E85CD5A52711AF5E009DB132 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E85CD5A82711B0AD009DB132 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,8 @@
 		E85CD5732711A15E009DB132 /* MVVM+RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E85CD5A42711AF4A009DB132 /* Globals */,
+				E85CD59F2711AF14009DB132 /* Extensions */,
 				E85CD58A2711A35A009DB132 /* ConfigurationFiles */,
 				E85CD5892711A32C009DB132 /* SupportingFiles */,
 				E85CD58D2711A39A009DB132 /* Scenes */,
@@ -119,6 +127,23 @@
 				E85CD59C2711A80B009DB132 /* SignUpView.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		E85CD59F2711AF14009DB132 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E85CD5A02711AF24009DB132 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E85CD5A42711AF4A009DB132 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				E85CD5A52711AF5E009DB132 /* Colors.swift */,
+				E85CD5A82711B0AD009DB132 /* Fonts.swift */,
+			);
+			path = Globals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,10 +216,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85CD5A92711B0AD009DB132 /* Fonts.swift in Sources */,
 				E85CD5792711A15E009DB132 /* SignUpViewController.swift in Sources */,
 				E85CD59D2711A80B009DB132 /* SignUpView.swift in Sources */,
 				E85CD5752711A15E009DB132 /* AppDelegate.swift in Sources */,
+				E85CD5A62711AF5E009DB132 /* Colors.swift in Sources */,
 				E85CD59A2711A7E7009DB132 /* SignUpViewModel.swift in Sources */,
+				E85CD5A12711AF24009DB132 /* UIView.swift in Sources */,
 				E85CD5772711A15E009DB132 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
