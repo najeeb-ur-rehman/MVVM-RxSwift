@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SignUpViewController.swift
 //  MVVM+RxSwift
 //
 //  Created by Najeeb VenD on 09/10/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
