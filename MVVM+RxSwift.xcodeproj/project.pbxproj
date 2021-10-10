@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		E85CD5A12711AF24009DB132 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CD5A02711AF24009DB132 /* UIView.swift */; };
 		E85CD5A62711AF5E009DB132 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CD5A52711AF5E009DB132 /* Colors.swift */; };
 		E85CD5A92711B0AD009DB132 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CD5A82711B0AD009DB132 /* Fonts.swift */; };
+		E86D9D16271336A600E53B03 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86D9D15271336A600E53B03 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E85CD5A02711AF24009DB132 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		E85CD5A52711AF5E009DB132 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E85CD5A82711B0AD009DB132 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E86D9D15271336A600E53B03 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 				4FC2B65479AF5ACF2200B9B8 /* Pods-MVVM+RxSwift.debug.xcconfig */,
 				73B23AF8ECB861A6583233B1 /* Pods-MVVM+RxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -158,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				E85CD5A02711AF24009DB132 /* UIView.swift */,
+				E86D9D15271336A600E53B03 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -288,6 +290,7 @@
 				E85CD5A92711B0AD009DB132 /* Fonts.swift in Sources */,
 				E85CD5792711A15E009DB132 /* SignUpViewController.swift in Sources */,
 				E85CD59D2711A80B009DB132 /* SignUpView.swift in Sources */,
+				E86D9D16271336A600E53B03 /* String.swift in Sources */,
 				E85CD5752711A15E009DB132 /* AppDelegate.swift in Sources */,
 				E85CD5A62711AF5E009DB132 /* Colors.swift in Sources */,
 				E85CD59A2711A7E7009DB132 /* SignUpViewModel.swift in Sources */,
