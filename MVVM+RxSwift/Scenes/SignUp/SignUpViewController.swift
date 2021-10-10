@@ -38,6 +38,47 @@ private extension SignUpViewController {
 		signupView.fullNameTextField.rx.text.bind(to: viewModel.fullName).disposed(by: disposeBag)
 		signupView.emailTextField.rx.text.bind(to: viewModel.email).disposed(by: disposeBag)
 		signupView.phoneNumberTextField.rx.text.bind(to: viewModel.phoneNumber).disposed(by: disposeBag)
+		
+		signupView.fullNameTextField.rx.controlEvent(.editingDidBegin).take(1)
+			.subscribe { [weak self] _ in
+				self?.viewModel.nameFieldShouldHighlight = true
+			}.disposed(by: disposeBag)
+		
+		viewModel.isValidName
+			.filter { [weak self] _  in
+					self?.viewModel.nameFieldShouldHighlight ?? false }
+			.bind { [weak self] valid in
+				// Update error state
+			}.disposed(by: disposeBag)
+		
+		signupView.emailTextField.rx.controlEvent(.editingDidBegin).take(1)
+			.subscribe { [weak self] _ in
+				self?.viewModel.emailFieldShouldHighlight = true
+			}.disposed(by: disposeBag)
+		
+		viewModel.isValidEmail
+			.filter { [weak self] _  in
+					self?.viewModel.emailFieldShouldHighlight ?? false }
+			.bind { [weak self] valid in
+				// Update error state
+			}.disposed(by: disposeBag)
+		
+		signupView.phoneNumberTextField.rx.controlEvent(.editingDidBegin).take(1)
+			.subscribe { [weak self] _ in
+				self?.viewModel.phoneFieldShouldHighlight = true
+			}.disposed(by: disposeBag)
+		
+		viewModel.isValidPhone
+			.filter { [weak self] _  in
+					self?.viewModel.phoneFieldShouldHighlight ?? false }
+			.bind { [weak self] valid in
+				// Update error state
+			}.disposed(by: disposeBag)
+
+		viewModel.isValidData
+			.bind(to: signupView.signUpButton.rx.isEnabled)
+			.disposed(by: disposeBag)
+
 	}
 	
 }
