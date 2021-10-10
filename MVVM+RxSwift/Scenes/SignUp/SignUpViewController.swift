@@ -20,7 +20,7 @@ class SignUpViewController: UIViewController {
 	
 	@IBOutlet var signupView: SignUpView!
 	
-	// MARK: ViewConytroller Lifecycle Methods
+	// MARK: ViewController Lifecycle Methods
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
