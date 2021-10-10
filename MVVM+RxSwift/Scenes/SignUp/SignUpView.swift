@@ -32,6 +32,8 @@ private extension SignUpView {
 	
 	func setupViewsAppearance() {
 		[fullNameTextField, emailTextField, phoneNumberTextField].forEach {
+			$0?.setCornerRadius(10, andClipContent: true)
+			$0?.updateForValidData(true)
 			$0?.backgroundColor = Color.primaryLight
 			$0?.textColor = Color.secondary
 			$0?.font = Font.regular(16)
@@ -39,7 +41,9 @@ private extension SignUpView {
 		signUpButton.backgroundColor = Color.green
 		signUpButton.titleLabel?.font = Font.medium(18)
 		signUpButton.setTitleColor(Color.primary, for: .normal)
+		signUpButton.setTitleColor(Color.primary?.withAlphaComponent(0.3), for: .disabled)
 		signUpButton.setCornerRadius(25)
+		signUpButton.isEnabled = false
 	}
 	
 }

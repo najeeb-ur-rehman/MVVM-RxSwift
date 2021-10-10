@@ -11,6 +11,8 @@ import RxCocoa
 
 class SignUpViewModel {
 	
+	let nameMinimumLengthCount = 3
+	
 	var nameFieldShouldHighlight = false
 	var emailFieldShouldHighlight = false
 	var phoneFieldShouldHighlight = false
@@ -24,7 +26,7 @@ class SignUpViewModel {
 	}
 	
 	var isValidName: Observable<Bool> {
-		fullName.map{ $0?.isNotEmpty ?? false }
+		fullName.map{ $0?.count ?? 0 >= self.nameMinimumLengthCount }
 	}
 	
 	var isValidPhone: Observable<Bool> {

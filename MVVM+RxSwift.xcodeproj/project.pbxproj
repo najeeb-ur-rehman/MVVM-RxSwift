@@ -20,6 +20,7 @@
 		E85CD5A62711AF5E009DB132 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CD5A52711AF5E009DB132 /* Colors.swift */; };
 		E85CD5A92711B0AD009DB132 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85CD5A82711B0AD009DB132 /* Fonts.swift */; };
 		E86D9D16271336A600E53B03 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86D9D15271336A600E53B03 /* String.swift */; };
+		E86D9D1D2713587700E53B03 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86D9D1C2713587700E53B03 /* UITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		E85CD5A52711AF5E009DB132 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E85CD5A82711B0AD009DB132 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		E86D9D15271336A600E53B03 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E86D9D1C2713587700E53B03 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			children = (
 				E85CD5A02711AF24009DB132 /* UIView.swift */,
 				E86D9D15271336A600E53B03 /* String.swift */,
+				E86D9D1C2713587700E53B03 /* UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E85CD5A92711B0AD009DB132 /* Fonts.swift in Sources */,
+				E86D9D1D2713587700E53B03 /* UITextField.swift in Sources */,
 				E85CD5792711A15E009DB132 /* SignUpViewController.swift in Sources */,
 				E85CD59D2711A80B009DB132 /* SignUpView.swift in Sources */,
 				E86D9D16271336A600E53B03 /* String.swift in Sources */,

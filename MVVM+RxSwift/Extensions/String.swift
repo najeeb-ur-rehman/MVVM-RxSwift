@@ -9,10 +9,6 @@ import Foundation
 
 extension String {
 	
-	var isNotEmpty: Bool {
-		return !isEmpty
-	}
-	
 	func isValidEmail() -> Bool {
 		let emailRegEx =
 			"(?:[a-zA-Z0-9!#$%\\&'*+/=?\\^_'{|}~-]+(?:\\.[a-zA-Z0-9!#$%\\&'*+/=?\\^_'{|}" +
@@ -28,10 +24,9 @@ extension String {
 	}
 	
 	func isValidNumber() -> Bool {
-		let PHONE_REGEX = "^[\\+0-9() \\-]+$"
+		let PHONE_REGEX = "^((\\+)|())[0-9]{9,10}$"
 		let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
 		let result =  phoneTest.evaluate(with: self)
-	
 		return result
 	}
 }
