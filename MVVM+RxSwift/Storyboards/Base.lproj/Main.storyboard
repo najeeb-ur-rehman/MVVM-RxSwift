@@ -8,6 +8,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="6Xp-Vm-ThO">
+            <objects>
+                <viewController id="POC-8g-SFl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="52T-lx-UA4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="congrats" translatesAutoresizingMaskIntoConstraints="NO" id="x4P-Tm-hK5">
+                                <rect key="frame" x="7" y="273.5" width="400" height="295"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0cY-Yi-9R1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x4P-Tm-hK5" firstAttribute="centerY" secondItem="52T-lx-UA4" secondAttribute="centerY" id="8CA-yb-pSs"/>
+                            <constraint firstItem="x4P-Tm-hK5" firstAttribute="centerX" secondItem="52T-lx-UA4" secondAttribute="centerX" id="UN6-4C-pHJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fsw-HD-MhV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQu-c5-UgT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="529" y="113"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -40,6 +65,9 @@
                                             <constraint firstAttribute="height" constant="50" id="ovh-09-uvq"/>
                                         </constraints>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <segue destination="POC-8g-SFl" kind="showDetail" id="qqm-MO-Ozp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -59,6 +87,9 @@
                             <outlet property="signUpButton" destination="WyW-2g-jeZ" id="pQm-DK-BmK"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="signupView" destination="8bC-Xf-vdC" id="Kwq-WN-eSc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,6 +97,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="congrats" width="400" height="295"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
